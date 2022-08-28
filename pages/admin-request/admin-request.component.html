@@ -1,0 +1,27 @@
+<div class="text-center">
+<mat-card>Requested for Cheque</mat-card></div>
+<div class="grid1">  
+    <table role="grid" id="tablerecords">  
+        <thead class="k-grid-header" role="rowgroup">  
+            <tr role="row">  
+                
+                <th>Email</th>  
+               
+            </tr>  
+        </thead> 
+        <p>---------</p> 
+        <tbody role="rowgroup">  
+          
+            <tr *ngFor="let e of CReq">
+                
+<td><strong>-> {{e.email}} </strong>   </td>
+
+</tr> 
+</tbody>  
+  
+</table>  
+  
+</div>  
+<div class="text-center">
+    <mat-card>  <a href="/admin" mat-icon-button class="example-icon mr20 ml20" aria-label="Example icon-button with share icon">
+        Dashboard       </a> </mat-card>

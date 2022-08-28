@@ -1,0 +1,21 @@
+<div class="text-center">
+    {{"Email = " + UserData1.email}}
+    <mat-card> Account Information for Transaction </mat-card>      </div>
+    <form (ngSubmit)="adminDeposit_submit()">
+        
+        <div class="text-center"> 
+            <div class="login-email-input">
+                Enter Email :  <mat-form-field class="full-width" appearance="outline">
+            <mat-label>email</mat-label>
+            <input 
+            [(ngModel)]="UserData1.email"
+            name="email"
+            matInput placeholder="abc@gmail.com">
+            <mat-hint></mat-hint>
+          </mat-form-field>
+          </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" mat-raised-button color="primary" >Send</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    </div>
+</form>

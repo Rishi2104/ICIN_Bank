@@ -1,0 +1,21 @@
+.logo {
+    padding: 15px;
+    text-align: right;
+    /* margin-right: 35px;
+    margin-top: 20px;
+    margin-left: 35px; */
+    background: rgb(34, 58, 152);
+    color: azure;
+}
+.welcome {
+    text-align: left;
+    
+}
+.logo1 {
+    border-style:groove;
+    border-image-slice: fill;
+    list-style-image: image();
+}
+
+html, body { height: 55%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,38 @@
+<app-navbar01></app-navbar01>
+<div class="profileDisp">
+<mat-card>User Profile Page</mat-card></div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div class="grid1">
+    <mat-card> Name  ------>  {{UserData.name | json}}</mat-card>
+
+
+
+    </div>
+    <div class="grid1">
+        <mat-card> Email  ------>     {{UserData.email | json}}</mat-card>
+        </div>
+    
+    
+    <div class="grid1">
+        <mat-card> Phone  ------>     {{UserData.phone | json}}</mat-card>
+        </div>
+
+        <div class="grid1">
+            <mat-card> Type of account  ------>     {{UserData.type | json}}</mat-card>
+            </div>
+    
+        <div class="home1">
+            <mat-card>  <a href="/dashboard" mat-icon-button class="example-icon mr20 ml20" aria-label="Example icon-button with share icon">
+                Dashboard       </a> </mat-card>
+        </div>
+    </body>
+    </html>

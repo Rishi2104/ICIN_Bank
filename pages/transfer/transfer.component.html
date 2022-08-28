@@ -1,0 +1,59 @@
+<app-navbar01></app-navbar01>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="grid1">
+        {{"Deposit = "+UserData1.deposit}}
+        <mat-card> Deposit Money </mat-card>      </div>
+        <form (ngSubmit)="deposit_submit()">
+            
+            <div class="text-center"> 
+                <div class="login-email-input">
+                    Amount in Rupees :  <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Deposit Amount</mat-label>
+                <input 
+                [(ngModel)]="UserData1.deposit"
+                name="email"
+                matInput placeholder="1000">
+                <mat-hint></mat-hint>
+              </mat-form-field>
+              </div>
+              </div>
+              <div class="button-stroke-login">
+                <button type="submit" mat-raised-button color="primary" >Deposit</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </div>
+              </form>
+
+              <div class="grid1">
+                {{"withdraw = "+UserData1.withdraw}}
+                <mat-card> Withdraw Money </mat-card>      </div>
+                <form (ngSubmit)="Withdraw_submit()">
+                    
+                    <div class="text-center"> 
+                        <div class="login-email-input">
+                            Amount in Rupees :  <mat-form-field class="full-width" appearance="outline">
+                        <mat-label>Withdraw Amount</mat-label>
+                        <input 
+                        [(ngModel)]="UserData1.withdraw"
+                        name="Withdraw"
+                        matInput placeholder="1000">
+                        <mat-hint></mat-hint>
+                      </mat-form-field>
+                      </div>
+                      </div>
+                      <div class="button-stroke-login">
+                        <button type="submit" mat-raised-button color="primary" >Withdraw</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                      </div>
+                      </form>
+                      <div class="grid1">
+                        <mat-card>  <a href="/dashboard" mat-icon-button class="example-icon mr20 ml20" aria-label="Example icon-button with share icon">
+                           Back to Dashboard       </a> </mat-card></div>
+    
+</body>
+</html>

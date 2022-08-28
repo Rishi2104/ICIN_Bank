@@ -1,0 +1,68 @@
+<app-navbar01></app-navbar01>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+</head>
+<body>
+    <form (ngSubmit)="signup_submit()"> 
+    <div class="login-text">
+        <p>Sign-Up</p>
+    </div>
+    <div class="text-center"> 
+        <div class="login-email-input">
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Email</mat-label>
+        <input [(ngModel)]="user.email"
+        name="email"
+        matInput placeholder="abc@gmail.com">
+        <mat-hint></mat-hint>
+      </mat-form-field>
+    </div>
+
+    <div class="login-email-input">
+        <mat-form-field class="full-width" appearance="outline">
+            <mat-label>Full Name</mat-label>
+            <input [(ngModel)]="user.name"
+            name="name"
+            matInput placeholder="John Doe">
+            <mat-hint></mat-hint>
+          </mat-form-field>
+        </div>
+
+        <div class="login-email-input">
+            <mat-form-field class="full-width" appearance="outline">
+                <mat-label>Phone Number</mat-label>
+                <input [(ngModel)]="user.phone"
+                name="phone"
+                matInput placeholder="9100000000">
+                <mat-hint></mat-hint>
+              </mat-form-field>
+            </div>
+
+
+    <div class="login-psw-input">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input [(ngModel)]="user.password"
+        name="password"        
+        matInput>
+      </mat-form-field>
+    </div>
+    <div class="button-stroke-login">
+        <button type="submit" mat-raised-button color="primary" >Register</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a mat-raised-button href="http://localhost:4200/login" target="_blank">Login Page</a>
+    </div>
+    </div>
+</form>
+
+<div class="footer-register"></div>
+<footer>
+    <p>All rights are reserved by ICIN-Bank</p>
+    <p>@copyright 2022</p>
+  </footer>
+</body> 
+</html>

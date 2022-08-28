@@ -1,0 +1,49 @@
+<app-navbar01></app-navbar01>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form (ngSubmit)="signin_submit()">
+    <div class="login-text">
+        <p>Login</p>
+    </div>
+    <div class="text-center"> 
+        <div class="login-email-input">
+    <mat-form-field class="full-width" appearance="outline">
+        <mat-label>email</mat-label>
+        <input 
+        [(ngModel)]="user.email"
+        name="email"
+        matInput placeholder="abc@gmail.com">
+        <mat-hint></mat-hint>
+      </mat-form-field>
+    </div>
+    <div class="login-psw-input">
+      <mat-form-field class="full-width" appearance="outline">
+        <mat-label>Password</mat-label>
+        <input [(ngModel)]="user.password"
+        name="password"        
+        matInput>
+      </mat-form-field>
+    </div>
+    <div class="button-stroke-login">
+        <button type="submit" mat-raised-button color="primary" >Sign in</button> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a mat-raised-button href="https://www.google.com/" target="_blank">Forgot Password</a>
+    </div>
+    <p></p>
+    <a mat-raised-button href="http://localhost:4200/register" target="_blank">Sign-Up here</a>
+    </div>
+</form>
+
+<div class="footer"></div>
+<footer>
+  <p>All rights are reserved by ICIN-Bank</p>
+  <p>@copyright 2022</p>
+  </footer>
+</body> 
+</html>
